@@ -1,0 +1,53 @@
+{
+   "abstract" : "Specify routes via Router::Simple",
+   "author" : [
+      "Jonathan Swartz <swartz@pobox.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.200000, CPAN::Meta::Converter version 2.102400",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Mason-Plugin-RouterSimple",
+   "no_index" : {
+      "directory" : [
+         "lib/Mason/Plugin/RouterSimple/t",
+         "lib/Mason/Plugin/RouterSimple/Test"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Mason" : "2.02"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Most" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-mason-plugin-routersimple@rt.cpan.org",
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=Mason-Plugin-RouterSimple"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/jonswar/perl-mason-plugin-routersimple.git",
+         "web" : "https://github.com/jonswar/perl-mason-plugin-routersimple"
+      }
+   },
+   "version" : "0.01"
+}
+
