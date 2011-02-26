@@ -22,9 +22,10 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Mason::Plugin::RouterSimple',
   'PREREQ_PM' => {
-    'Mason' => '2.02'
+    'Mason' => '2.02',
+    'Router::Simple' => '0.07'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

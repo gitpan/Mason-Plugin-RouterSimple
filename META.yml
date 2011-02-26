@@ -19,7 +19,8 @@ no_index:
     - lib/Mason/Plugin/RouterSimple/Test
 requires:
   Mason: 2.02
+  Router::Simple: 0.07
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Mason-Plugin-RouterSimple
   repository: git://github.com/jonswar/perl-mason-plugin-routersimple.git
-version: 0.01
+version: 0.02

@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple;
 BEGIN {
-  $Mason::Plugin::RouterSimple::VERSION = '0.01';
+  $Mason::Plugin::RouterSimple::VERSION = '0.02';
 }
 use Moose;
 with 'Mason::Plugin';
@@ -17,7 +17,7 @@ Mason::Plugin::RouterSimple - Specify routes for page components
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

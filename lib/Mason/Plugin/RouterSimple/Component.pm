@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple::Component;
 BEGIN {
-  $Mason::Plugin::RouterSimple::Component::VERSION = '0.01';
+  $Mason::Plugin::RouterSimple::Component::VERSION = '0.02';
 }
 use Mason::PluginRole;
 use Router::Simple;
