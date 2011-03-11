@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple::t::Basic;
 BEGIN {
-  $Mason::Plugin::RouterSimple::t::Basic::VERSION = '0.02';
+  $Mason::Plugin::RouterSimple::t::Basic::VERSION = '0.03';
 }
 use Test::Class::Most parent => 'Mason::Test::Class';
 
@@ -9,7 +9,7 @@ __PACKAGE__->default_plugins( [ '@Default', 'RouterSimple' ] );
 sub test_ok : Test(10) {
     my $self = shift;
     $self->add_comp(
-        path => '/foo.m',
+        path => '/foo.mc',
         src  => '
 %% route "bar";
 %% route "wiki/:page", { action => "wiki" };
@@ -43,7 +43,7 @@ splat = <% $.splat ? split(",", $.splat) : "undef" %>
             );
         }
         else {
-            $self->test_comp( path => $path, expect_error => qr/could not find component/ );
+            $self->test_comp( path => $path, expect_error => qr/could not resolve request path/ );
         }
     };
 

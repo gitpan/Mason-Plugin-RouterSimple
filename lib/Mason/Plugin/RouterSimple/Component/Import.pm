@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple::Component::Import;
 BEGIN {
-  $Mason::Plugin::RouterSimple::Component::Import::VERSION = '0.02';
+  $Mason::Plugin::RouterSimple::Component::Import::VERSION = '0.03';
 }
 use Mason::PluginRole;
 

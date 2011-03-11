@@ -1,13 +1,13 @@
 package Mason::Plugin::RouterSimple::Component;
 BEGIN {
-  $Mason::Plugin::RouterSimple::Component::VERSION = '0.02';
+  $Mason::Plugin::RouterSimple::Component::VERSION = '0.03';
 }
 use Mason::PluginRole;
 use Router::Simple;
 
 my %router_objects;
 
-has 'router_result' => ( );
+has 'router_result' => ();
 
 method allow_path_info ($class:) {
     return $class->router_object ? 1 : $class->SUPER::allow_path_info();

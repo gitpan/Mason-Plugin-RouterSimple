@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple::Interp;
 BEGIN {
-  $Mason::Plugin::RouterSimple::Interp::VERSION = '0.02';
+  $Mason::Plugin::RouterSimple::Interp::VERSION = '0.03';
 }
 use Mason::PluginRole;
 use Mason::Util qw(uniq);

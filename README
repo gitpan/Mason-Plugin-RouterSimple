@@ -2,10 +2,10 @@ NAME
     Mason::Plugin::RouterSimple - Specify routes for page components
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
-    In a top-level component '/archives.m':
+    In a top-level component '/archives.mc':
 
         %% route ":section/{year:[0-9]{4}}/{month:[0-9]{2}}";
 
@@ -53,7 +53,7 @@ DESCRIPTION
     If none of the routes match, the request will be declined; in a web
     context this generally means a 404.
 
-    e.g. Given the route declarations above in a component named '/site.m',
+    e.g. Given the route declarations above in a component named '/site.mc',
 
     *   The URL `/site/wiki/HomePage' will set `$.action = "wiki"' and
         `$.page = "HomePage"'.
