@@ -1,13 +1,14 @@
 package Mason::Plugin::RouterSimple::t::Basic;
 BEGIN {
-  $Mason::Plugin::RouterSimple::t::Basic::VERSION = '0.03';
+  $Mason::Plugin::RouterSimple::t::Basic::VERSION = '0.04';
 }
 use Test::Class::Most parent => 'Mason::Test::Class';
 
 __PACKAGE__->default_plugins( [ '@Default', 'RouterSimple' ] );
 
-sub test_ok : Test(10) {
+sub test_ok : Tests() {
     my $self = shift;
+
     $self->add_comp(
         path => '/foo.mc',
         src  => '
@@ -53,6 +54,10 @@ splat = <% $.splat ? split(",", $.splat) : "undef" %>
     $try->( '/foo/blog/2010/02', { year => '2010', month => '02' } );
     $try->( '/foo/baz',          undef );
     $try->( '/foo/blog/201O/02', undef );
+
+    # It's ok not to have routes
+    #
+    $self->test_comp( src => '2+2=<% 2+2 %>', expect => '2+2=4' );
 }
 
 1;

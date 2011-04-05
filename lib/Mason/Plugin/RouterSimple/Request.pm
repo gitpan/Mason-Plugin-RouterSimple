@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple::Request;
 BEGIN {
-  $Mason::Plugin::RouterSimple::Request::VERSION = '0.03';
+  $Mason::Plugin::RouterSimple::Request::VERSION = '0.04';
 }
 use Mason::PluginRole;
 
