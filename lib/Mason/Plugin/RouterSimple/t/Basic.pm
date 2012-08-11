@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple::t::Basic;
 BEGIN {
-  $Mason::Plugin::RouterSimple::t::Basic::VERSION = '0.05';
+  $Mason::Plugin::RouterSimple::t::Basic::VERSION = '0.06';
 }
 use Test::Class::Most parent => 'Mason::Test::Class';
 

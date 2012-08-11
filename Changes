@@ -2,6 +2,10 @@ Revision history for Mason-Plugin-RouterSimple
 
 ** denotes an incompatible change
 
+0.06  Aug 11, 2012
+
+- Replace %% with <%class> syntax
+
 0.05  Jul 2, 2011
 
 - Add required is=>'ro' now that PluginRole does not automate it

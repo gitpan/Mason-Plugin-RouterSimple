@@ -25,7 +25,7 @@ my %WriteMakefileArgs = (
     'Mason' => '2.05',
     'Router::Simple' => '0.07'
   },
-  'VERSION' => '0.05',
+  'VERSION' => '0.06',
   'test' => {
     'TESTS' => 't/*.t'
   }
