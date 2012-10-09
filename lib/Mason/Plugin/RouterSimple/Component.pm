@@ -1,6 +1,6 @@
 package Mason::Plugin::RouterSimple::Component;
 BEGIN {
-  $Mason::Plugin::RouterSimple::Component::VERSION = '0.06';
+  $Mason::Plugin::RouterSimple::Component::VERSION = '0.07';
 }
 use Mason::PluginRole;
 use Router::Simple;
@@ -10,7 +10,7 @@ my %router_objects;
 has 'router_result' => ( is => 'ro' );
 
 method allow_path_info ($class:) {
-    return $class->router_object ? 1 : $class->SUPER::allow_path_info();
+    return $class->router_object ? 1 : 0;
 }
 
 method router_add ($class: $pattern, $dest) {

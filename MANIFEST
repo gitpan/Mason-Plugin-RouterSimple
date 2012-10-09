@@ -14,4 +14,3 @@ lib/Mason/Plugin/RouterSimple/t/Basic.pm
 perlcriticrc
 t/01-use.t
 t/Basic.t
-tidyall.ini

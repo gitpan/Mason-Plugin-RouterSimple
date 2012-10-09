@@ -2,7 +2,7 @@ NAME
     Mason::Plugin::RouterSimple - Specify routes for page components
 
 VERSION
-    version 0.06
+    version 0.07
 
 SYNOPSIS
     In a top-level component '/archives.mc':
